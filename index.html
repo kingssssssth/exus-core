@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EXUS CORE - Zombie Outbreak</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- IMPORT MAP DE THREE.JS -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="crosshair">+</div>
+
+    <div id="hud">
+
+        <div class="top-left">
+
+            <div class="logo">
+                EXUS CORE
+            </div>
+
+            <div class="mode">
+                ZOMBIE OUTBREAK
+            </div>
+
+        </div>
+
+        <div class="health">
+
+            <span>❤️ 100</span>
+
+            <div class="health-bar">
+                <div></div>
+            </div>
+
+        </div>
+
+        <div class="ammo">
+            🔫 <span id="ammo">30</span> / 120
+        </div>
+
+    </div>
+
+    <div id="message">
+        HAZ CLIC PARA JUGAR
+    </div>
+
+    <script
+        type="module"
+        src="game.js">
+    </script>
+
+</body>
+
+</html>

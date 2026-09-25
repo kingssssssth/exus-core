@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: #050505;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+canvas {
+    display: block;
+}
+
+#crosshair {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 25px;
+
+    color: white;
+
+    z-index: 10;
+
+    pointer-events: none;
+
+    text-shadow:
+        0 0 5px black,
+        0 0 10px black;
+}
+
+#hud {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: 5;
+}
+
+.top-left {
+    position: absolute;
+
+    top: 25px;
+    left: 30px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    color: #00ff88;
+
+    text-shadow:
+        0 0 10px #00ff88;
+}
+
+.mode {
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #aaa;
+
+    margin-top: 5px;
+}
+
+.health {
+    position: absolute;
+
+    bottom: 30px;
+    left: 30px;
+
+    width: 250px;
+}
+
+.health span {
+    font-size: 18px;
+}
+
+.health-bar {
+    width: 100%;
+    height: 12px;
+
+    background: #222;
+
+    margin-top: 8px;
+
+    border: 1px solid #555;
+}
+
+.health-bar div {
+    width: 100%;
+    height: 100%;
+
+    background: #00ff66;
+}
+
+.ammo {
+    position: absolute;
+
+    right: 35px;
+    bottom: 30px;
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+#message {
+    position: fixed;
+
+    left: 50%;
+    top: 70%;
+
+    transform: translateX(-50%);
+
+    padding: 15px 30px;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    border: 1px solid #00ff88;
+
+    color: white;
+
+    letter-spacing: 2px;
+
+    z-index: 20;
+
+    pointer-events: none;
+}
